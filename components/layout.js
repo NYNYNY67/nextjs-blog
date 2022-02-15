@@ -11,7 +11,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className='{style.container}'>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico"/>
         <meta
@@ -56,7 +56,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyle.colorInherit}>{name}</a>
+                <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
           </>
